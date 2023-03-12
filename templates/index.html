@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename = 'javascript/skeleton.js') }}" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/07ca69b752.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" types="text/css" href="{{url_for('static',filename='css/stylesheet.css')}}">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="navbarPlaceholder"></nav>
+
+    <div id="layout">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{url_for('static', filename='img/prof.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button type="button" id="scraperBtn"
+                            class="indexBtn btn btn-outline-secondary btn-lg px-4">Career Matchmaker</button>
+
+                        <h2>Swipe right on your dream job. Match with companies that share your values</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url_for('static', filename='img/prof2.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <button type="button" id="roasterBtn"
+                            class="indexBtn btn btn-outline-secondary btn-lg px-4">Resume Roaster</button>
+                        <h2>The simpler you say it, the more eloquent it is</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url_for('static', filename='img/prof3.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <button type="button" id="aboutBtn" class="indexBtn btn btn-outline-secondary btn-lg px-4">About
+                            us</button>
+
+                        <h2>Learn about the team behind JobTinder</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="gap-2 d-md-flex justify-content-md-center text-center py-4">
+        <button type="button" class="btn btn-primary px-4 mr-3 col-4 justify-content-md-center btn-lg d-md-none">Button</button>
+        <button type="button" class="btn btn-outline-secondary px-4 col-4 justify-content-md-center btn-lg d-md-none">Button</button>
+      </div>
+
+    <div class="container">
+        <!-- <h2 class="font-weight-light">Bootstrap 5 Horizontal Scrolling Cards with Flexbox</h2> -->
+        <div class="d-flex flex-row flex-nowrap overflow-auto row fs-5">
+            <div class="col-sm-12 col-md card p-4"> "As an unemployed mechanical engineer, I was struggling to find job
+                opportunities that
+                matched my skills and experience. That's when I discovered JobTinder, and it was a
+                game-changer for me. The platform's resume roaster feature analyzed my resume and provided
+                me with suggestions on how to make it more attractive to potential employers. "</div>
+            <div class="col-sm-12 col-md card p-4">"As a teacher looking for a career change, I knew that my resume
+                needed a major overhaul.
+                That's when I discovered JobTinder's resume roster feature. The platform not only analyzed
+                my resume but also provided me with valuable tips on how to improve it. With JobTinder's
+                help, I was able to revamp my resume and make it more appealing to potential employers." </div>
+            <div class="col-sm-12 col-md card p-4"> "As a tech professional, I often find it challenging to navigate the
+                job market and find job
+                openings that match my skills and experience. However, JobTinder has been a game-changer for
+                me. The platform's job matching algorithm is incredibly accurate and has helped me find job
+                opportunities that I may not have found otherwise."</div>
+
+        </div>
+    </div>
+
+    <div class="mb-8 mt-4 pt-4 pb-5"></div>
+    
+
+    <footer id="footerDiv" ></footer>
+</body>
+
+</html>

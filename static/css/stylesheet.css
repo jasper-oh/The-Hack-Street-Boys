@@ -1,0 +1,40 @@
+/* #layout {
+    height: 94vh;
+} */
+
+#carouselExampleCaptions{
+    /* height: 64vh; */
+    margin-bottom: 0;
+}
+
+.carousel-item {
+
+    padding-bottom: 0;
+}
+
+.carousel-caption > h2 {
+    margin-top: 20px;
+    text-shadow: 
+  -1px -1px 0 rgb(0, 0, 0),  
+  1px -1px 0 rgb(0, 0, 0),  
+  -1px 1px 0 rgb(0, 0, 0),  
+  1px 1px 0 rgb(0, 0, 0);
+}
+
+.indexBtn {
+    color: black;
+    background-color: white;
+}
+
+.testimonial{
+    background-color: rgb(170, 170, 170);
+    padding: 8px;
+    padding-top: 75px;
+    border-radius: 15px;
+    z-index: 2;
+    height: 420px;
+}
+
+.testimonial > p {
+    color: black;
+}

@@ -1,0 +1,35 @@
+.bar-container1,
+.bar-container2 {
+  width: 20px;
+  height: 200px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.bar2,
+.bar1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: gray;
+  transition: height 0.5s ease-in-out;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
